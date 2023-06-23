@@ -1,11 +1,11 @@
 # This file can only be edited inside the uBlue image's git repository.
 
 # The image will be at "ghcr.io/yourusername/name".
-name: startingpoint
+name: seiketsu
 
 # The native container image to build on top of.
 # Warning: Non-uBlue images might not work properly, due to missing components.
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/kinoite-main
 
 # What Fedora version to use. Use an explicit version or `latest`.
 # If you use `latest`, you will be automatically updated to the next major
@@ -61,9 +61,40 @@ rpm:
     # apps and binaries require it, so it's a good idea to always include it
     # if you ever download or compile any custom software on your machine.
     - libadwaita
-    # Add your own below:
-    # Example:
-    # - tilix
+    
+    - mesa-libOpenCL
+
+    # Fcitx input
+    - fcitx5-mozc
+    - fcitx5-configtool
+    - fcitx5-autostart
+    - fcitx5-qt
+    - fcitx-qt5 
+    - kcm-fcitx5
+
+    - rclone
+    - ffmpeg
+    - mozilla-openh264
+    - openh264
+    - AtomicParsley 
+    - kdeplasma-addons
+    - xwaylandvideobridge
+
+    - neofetch 
+
+    - git
+    - curl
+
+    - cmake
+    - clang
+    - clang-tools-extra
+    - mold
+    
+    - fira-code-fonts
+    - google-noto-sans-fonts
+    - mscore-fonts-all
+    - python3
+    - tokei
 
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
@@ -87,5 +118,27 @@ firstboot:
   # the "just setup-flatpaks" command from our "custom.just" template file.
   # This is just an example selection:
   flatpaks:
-    - io.github.celluloid_player.Celluloid
+    - com.github.tchx84.Flatseal
+    - com.obsproject.Studio
+    - com.obsproject.Studio.Plugin.OBSVkCapture
+    - com.spotify.Client
+    - com.valvesoftware.Steam
+    - com.visualstudio.code
+    - fr.handbrake.ghb
+    - io.mpv.Mpv
+    - md.obsidian.Obsidian
+    - net.ankiweb.Anki
+    - org.audacityteam.Audacity
+    - org.blender.Blender
+    - org.freedesktop.Platform.ffmpeg-full
+    - org.gnome.DejaDup
+    - org.gustavoperedo.FontDownloader
     - org.kde.krita
+    - org.keepassxc.KeePassXC
+    - org.libreoffice.LibreOffice
+    - org.mozilla.firefox
+    - org.qbittorrent.qBittorrent
+    - org.signal.Signal
+    - org.sqlitebrowser.sqlitebrowser
+    - org.telegram.desktop
+    - org.wireshark.Wireshark
