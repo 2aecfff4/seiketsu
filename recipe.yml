@@ -97,6 +97,8 @@ rpm:
     - tokei
     - ripgrep
 
+    - yt-dlp
+
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
@@ -136,8 +138,9 @@ firstboot:
     - org.gustavoperedo.FontDownloader
     - org.kde.krita
     - org.keepassxc.KeePassXC
-    - org.libreoffice.LibreOffice
+    - org.onlyoffice.desktopeditors
     - org.mozilla.firefox
+    - io.gitlab.librewolf-community
     - org.qbittorrent.qBittorrent
     - org.signal.Signal
     - org.sqlitebrowser.sqlitebrowser
