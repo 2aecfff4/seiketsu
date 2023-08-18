@@ -92,6 +92,7 @@ rpm:
     
     - fira-code-fonts
     - google-noto-sans-fonts
+    - liberation-fonts
     - mscore-fonts-all
     - python3
     - tokei
