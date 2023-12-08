@@ -32,8 +32,6 @@ COPY --from=ghcr.io/ublue-os/bling:latest /files /tmp/bling/files
 COPY build.sh /tmp/build.sh
 COPY config /tmp/config/
 
-cat /usr/etc/profile.d/ublue-firstboot.sh
-
 # Copy modules
 # The default modules are inside ublue-os/bling
 COPY --from=ghcr.io/ublue-os/bling:latest /modules /tmp/modules/
@@ -43,6 +41,8 @@ COPY modules /tmp/modules/
 # `yq` is used for parsing the yaml configuration
 # It is copied from the official container image since it's not available as an RPM.
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
+
+RUN cat /usr/etc/profile.d/ublue-firstboot.sh
 
 # Run the build script, then clean up temp files and finalize container build.
 RUN chmod +x /tmp/build.sh && /tmp/build.sh && \
