@@ -90,34 +90,34 @@ modules:
     custom-flatpaks: # this section is optional
       # - Celluloid: io.github.celluloid_player.Celluloid
       # - Krita: org.kde.krita
-      - com.github.johnfactotum.Foliate
-      - com.github.tchx84.Flatseal
-      - com.obsproject.Studio
-      - com.obsproject.Studio.Plugin.OBSVkCapture
-      - com.spotify.Client
-      - com.valvesoftware.Steam
-      - com.visualstudio.code
-      - com.vivaldi.Vivaldi
-      - fr.handbrake.ghb
-      - io.mpv.Mpv
-      - md.obsidian.Obsidian
-      - net.ankiweb.Anki
-      - org.blender.Blender
-      - org.freedesktop.Platform.ffmpeg-full
-      - org.gimp.GIMP
-      - org.gustavoperedo.FontDownloader
-      - org.kde.krita
-      - org.keepassxc.KeePassXC
-      - org.onlyoffice.desktopeditors
-      - org.mozilla.firefox
-      - org.tenacityaudio.Tenacity
-      - io.gitlab.librewolf-community
-      - org.qbittorrent.qBittorrent
-      - org.signal.Signal
-      - org.sqlitebrowser.sqlitebrowser
-      - org.telegram.desktop
-      - org.wireshark.Wireshark
-      - org.winehq.Wine
+      - Foliate: com.github.johnfactotum.Foliate
+      - Flatseal: com.github.tchx84.Flatseal
+      - Studio: com.obsproject.Studio
+      - OBSVkCapture: com.obsproject.Studio.Plugin.OBSVkCapture
+      - Client: com.spotify.Client
+      - Steam: com.valvesoftware.Steam
+      - vscode: com.visualstudio.code
+      - Vivaldi: com.vivaldi.Vivaldi
+      - HandBrake: fr.handbrake.ghb
+      - Mpv: io.mpv.Mpv
+      - Obsidian: md.obsidian.Obsidian
+      - Anki: net.ankiweb.Anki
+      - Blender: org.blender.Blender
+      - ffmpeg-full: org.freedesktop.Platform.ffmpeg-full
+      - GIMP: org.gimp.GIMP
+      - FontDownloader: org.gustavoperedo.FontDownloader
+      - Krita: org.kde.krita
+      - KeePassXC: org.keepassxc.KeePassXC
+      - OnlyOffice: org.onlyoffice.desktopeditors
+      - Firefox: org.mozilla.firefox
+      - Tenacity: org.tenacityaudio.Tenacity
+      - LibreWolf: io.gitlab.librewolf-community
+      - qBittorrent: org.qbittorrent.qBittorrent
+      - Signal: org.signal.Signal
+      - sqlitebrowser: org.sqlitebrowser.sqlitebrowser
+      - desktop: org.telegram.desktop
+      - Wireshark: org.wireshark.Wireshark
+      - Wine: org.winehq.Wine
 
   - type: script
     scripts:
