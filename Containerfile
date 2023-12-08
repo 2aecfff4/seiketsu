@@ -32,6 +32,8 @@ COPY --from=ghcr.io/ublue-os/bling:latest /files /tmp/bling/files
 COPY build.sh /tmp/build.sh
 COPY config /tmp/config/
 
+cat /usr/etc/profile.d/ublue-firstboot.sh
+
 # Copy modules
 # The default modules are inside ublue-os/bling
 COPY --from=ghcr.io/ublue-os/bling:latest /modules /tmp/modules/
