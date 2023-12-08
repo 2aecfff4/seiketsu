@@ -20,7 +20,6 @@ ARG RECIPE=recipe.yml
 # The default image registry to write to policy.json and cosign.yaml
 ARG IMAGE_REGISTRY=ghcr.io/ublue-os
 
-
 COPY cosign.pub /usr/share/ublue-os/cosign.pub
 
 # Copy the bling from ublue-os/bling into tmp, to be installed later by the bling module
@@ -42,8 +41,12 @@ COPY modules /tmp/modules/
 # It is copied from the official container image since it's not available as an RPM.
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 
+# #NOTE: It looks like something (probably bazzite) is already adding this file. Remove it.
 RUN cat /usr/etc/profile.d/ublue-firstboot.sh
+RUN rm /usr/etc/profile.d/ublue-firstboot.sh
 
 # Run the build script, then clean up temp files and finalize container build.
 RUN chmod +x /tmp/build.sh && /tmp/build.sh && \
     rm -rf /tmp/* /var/* && ostree container commit
+
+RUN cat /usr/etc/profile.d/ublue-firstboot.sh
