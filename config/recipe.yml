@@ -59,6 +59,7 @@ modules:
 
       - fira-code-fonts
       - google-noto-sans-fonts
+      - google-noto-cjk-fonts 
       - liberation-fonts
       - mscore-fonts-all
       - tokei
