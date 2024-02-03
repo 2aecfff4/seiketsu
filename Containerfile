@@ -10,7 +10,7 @@
 
 # !! Warning: changing these might not do anything for you. Read comment above.
 ARG IMAGE_MAJOR_VERSION=39
-ARG BASE_IMAGE_URL=ghcr.io/ublue-os/bazzite
+ARG BASE_IMAGE_URL=ghcr.io/ublue-os/silverblue-main
 
 FROM ${BASE_IMAGE_URL}:${IMAGE_MAJOR_VERSION}
 
@@ -21,11 +21,6 @@ ARG RECIPE=recipe.yml
 ARG IMAGE_REGISTRY=ghcr.io/ublue-os
 
 COPY cosign.pub /usr/share/ublue-os/cosign.pub
-
-# Copy the bling from ublue-os/bling into tmp, to be installed later by the bling module
-# Feel free to remove these lines if you want to speed up image builds and don't want any bling
-COPY --from=ghcr.io/ublue-os/bling:latest /rpms /tmp/bling/rpms
-COPY --from=ghcr.io/ublue-os/bling:latest /files /tmp/bling/files
 
 # Copy build scripts & configuration
 COPY build.sh /tmp/build.sh
@@ -45,8 +40,10 @@ COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 RUN cat /usr/etc/profile.d/ublue-firstboot.sh
 RUN rm /usr/etc/profile.d/ublue-firstboot.sh
 
+# Change this if you want different version/tag of akmods.
+COPY --from=ghcr.io/ublue-os/akmods:main-39 /rpms /tmp/rpms
+
 # Run the build script, then clean up temp files and finalize container build.
 RUN chmod +x /tmp/build.sh && /tmp/build.sh && \
     rm -rf /tmp/* /var/* && ostree container commit
-
-RUN cat /usr/etc/profile.d/ublue-firstboot.sh
+    
