@@ -86,6 +86,7 @@ modules:
       # Multiple install of same flatpaks with different branches is not supported.
         - com.github.johnfactotum.Foliate
         - com.github.tchx84.Flatseal
+        - com.github.wwmm.easyeffects
         - com.obsproject.Studio
         - com.obsproject.Studio.Plugin.OBSVkCapture
         - com.spotify.Client
@@ -100,6 +101,7 @@ modules:
         - full: org.freedesktop.Platform.ffmpeg-full
         - org.gimp.GIMP
         - org.gustavoperedo.FontDownloader
+        - org.kde.arianna
         - org.kde.krita
         - org.keepassxc.KeePassXC
         - org.onlyoffice.desktopeditors
@@ -111,7 +113,7 @@ modules:
         - org.sqlitebrowser.sqlitebrowser
         - org.telegram.desktop
         - org.wireshark.Wireshark
-        - org.winehq.Wine      
+        - org.winehq.Wine
       remove:
       # - org.gnome.eog
       #
