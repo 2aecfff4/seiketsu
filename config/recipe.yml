@@ -98,7 +98,7 @@ modules:
         - md.obsidian.Obsidian
         - net.ankiweb.Anki
         - org.blender.Blender
-        - full: org.freedesktop.Platform.ffmpeg-full
+        - org.freedesktop.Platform.ffmpeg-full
         - org.gimp.GIMP
         - org.gustavoperedo.FontDownloader
         - org.kde.arianna
