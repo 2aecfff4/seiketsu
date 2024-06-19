@@ -42,8 +42,6 @@ modules:
       - kdeplasma-addons
       - xwaylandvideobridge
 
-      - neofetch 
-
       - git
       - curl
 
@@ -63,6 +61,8 @@ modules:
       - yt-dlp 
 
       - scrcpy
+
+      - easyeffects
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -84,7 +84,6 @@ modules:
         - com.usebottles.bottles
         - com.github.johnfactotum.Foliate
         - com.github.tchx84.Flatseal
-        - com.github.wwmm.easyeffects
         - com.obsproject.Studio
         - com.obsproject.Studio.Plugin.OBSVkCapture
         - com.spotify.Client
