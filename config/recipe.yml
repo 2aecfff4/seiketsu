@@ -96,7 +96,7 @@ modules:
         - net.ankiweb.Anki
         - net.davidotek.pupgui2
         - org.blender.Blender
-        - org.freedesktop.Platform.ffmpeg-full
+        # - org.freedesktop.Platform.ffmpeg-full
         - org.gimp.GIMP
         - org.gustavoperedo.FontDownloader
         - org.kde.arianna
