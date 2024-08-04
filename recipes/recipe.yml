@@ -37,7 +37,8 @@ modules:
       - fcitx5-autostart
       - fcitx5-qt
       - fcitx-qt5
-      - kcm-fcitx5
+      - kcm-fcitx
+      - im-config
 
       - rclone
       - ffmpeg
