@@ -38,7 +38,7 @@ modules:
       - fcitx5-qt
       - fcitx-qt5
       - kcm-fcitx
-      - im-config
+      - imsettings
 
       - rclone
       - ffmpeg
