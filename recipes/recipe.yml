@@ -38,7 +38,7 @@ modules:
       - fcitx5-qt
       - fcitx-qt5
       - kcm-fcitx5
-      - fcitx5-configtool
+      # - fcitx5-configtool
       - imsettings
 
       - rclone
