@@ -100,7 +100,7 @@ modules:
         - com.github.johnfactotum.Foliate
         - com.github.tchx84.Flatseal
         - com.obsproject.Studio
-        - com.obsproject.Studio.Plugin.OBSVkCapture
+        # - com.obsproject.Studio.Plugin.OBSVkCapture
         - com.spotify.Client
         - com.valvesoftware.Steam
         - com.visualstudio.code
