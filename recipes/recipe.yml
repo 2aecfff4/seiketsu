@@ -72,11 +72,8 @@ modules:
 
       - easyeffects
 
-      - waydroid
-
       - mesa-va-drivers-freeworld
       - libavcodec-freeworld
-      - gamescope
 
       - xeyes
 
