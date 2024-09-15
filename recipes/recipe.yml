@@ -45,7 +45,7 @@ modules:
       - rclone
       - ffmpeg
       # - mozilla-openh264
-      - openh264
+      # - openh264
       - AtomicParsley
       - kdeplasma-addons
       - xwaylandvideobridge
