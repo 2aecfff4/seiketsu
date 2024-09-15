@@ -72,7 +72,6 @@ modules:
 
       - easyeffects
 
-      - mesa-va-drivers-freeworld
       - libavcodec-freeworld
 
       - xeyes
