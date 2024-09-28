@@ -80,6 +80,8 @@ modules:
       - xeyes
 
       - scx-scheds
+
+      - gamescope  
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -114,6 +116,7 @@ modules:
         - net.davidotek.pupgui2
         - org.blender.Blender
         # - org.freedesktop.Platform.ffmpeg-full
+        - org.freedesktop.Platform.VulkanLayer.gamescope
         - org.gimp.GIMP
         - org.gustavoperedo.FontDownloader
         - org.kde.arianna
