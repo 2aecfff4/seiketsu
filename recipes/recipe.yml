@@ -31,6 +31,9 @@ modules:
     install:
       # - micro
       # - starship
+      - perl
+      - perl-CPAN 
+      
       - python3-pip
       - python3
 
