@@ -100,41 +100,7 @@ modules:
       # repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-        # - org.mozilla.firefox
-        # - org.gnome.Loupe
-        # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
-        - com.usebottles.bottles
-        - com.github.johnfactotum.Foliate
-        - com.github.tchx84.Flatseal
-        - com.obsproject.Studio
-        # - com.obsproject.Studio.Plugin.OBSVkCapture
-        - com.spotify.Client
-        - com.valvesoftware.Steam
-        - com.visualstudio.code
-        - com.vivaldi.Vivaldi
-        - fr.handbrake.ghb
-        - io.mpv.Mpv
-        - md.obsidian.Obsidian
-        - net.ankiweb.Anki
-        - net.davidotek.pupgui2
-        - org.blender.Blender
-        # - org.freedesktop.Platform.ffmpeg-full
-        - org.freedesktop.Platform.VulkanLayer.gamescope
-        - org.gimp.GIMP
-        - org.gustavoperedo.FontDownloader
-        - org.kde.arianna
-        - org.kde.krita
-        - org.keepassxc.KeePassXC
-        - org.onlyoffice.desktopeditors
-        - org.mozilla.firefox
-        - org.tenacityaudio.Tenacity
-        - io.gitlab.librewolf-community
-        - org.qbittorrent.qBittorrent
-        - org.signal.Signal
-        - org.sqlitebrowser.sqlitebrowser
-        - org.telegram.desktop
-        - org.wireshark.Wireshark
-        - org.winehq.Wine        
+        - one.ablaze.floorp        
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
       # only normal flatpak applications are (like Floorp Lightning web browser in this example).
       # Installing different branches of the same Flatpak is not supported.
