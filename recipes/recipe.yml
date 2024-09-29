@@ -62,6 +62,7 @@ modules:
       - cmake-data
       - clang
       - clang-tools-extra
+      - jq
       - mold
 
       - fira-code-fonts
