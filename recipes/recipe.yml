@@ -37,6 +37,8 @@ modules:
       - python3-pip
       - python3
 
+      - docker-compose
+
       # Fcitx input
       - fcitx5-mozc
       - fcitx5-configtool
