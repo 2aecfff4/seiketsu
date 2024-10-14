@@ -81,8 +81,6 @@ modules:
 
       - easyeffects
 
-      - libavcodec-freeworld
-
       - xeyes
 
       - scx-scheds
