@@ -49,6 +49,9 @@ modules:
       # - fcitx5-configtool
       - imsettings
 
+      - mecab 
+      - mecab-ipadic
+
       - rclone
       - ffmpeg
       - mozilla-openh264
