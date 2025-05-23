@@ -18,6 +18,7 @@ dnf5 -y copr enable kylegospo/obs-vkcapture
 # Enable nerd-fonts repo
 dnf5 -y copr enable che/nerd-fonts
 
-
+dnf5 -y copr enable danayer/mesa-git
+dnf5 -y update --refresh
 
 echo "::endgroup::"
