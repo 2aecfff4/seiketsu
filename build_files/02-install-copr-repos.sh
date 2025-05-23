@@ -19,8 +19,5 @@ dnf5 -y copr enable kylegospo/obs-vkcapture
 dnf5 -y copr enable che/nerd-fonts
 
 
-dnf5 -y copr disable gmaglione/podman-bootc
-
-
 
 echo "::endgroup::"
