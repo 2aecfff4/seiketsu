@@ -2,9 +2,6 @@
 
 echo "::group:: ===$(basename "$0")==="
 
-# Disable uupd from updating distroboxes
-sed -i 's|uupd|& --disable-module-distrobox|' /usr/lib/systemd/system/uupd.service
-
 set -eoux pipefail
 
 # Setup Systemd
@@ -12,7 +9,6 @@ systemctl enable rpm-ostree-countme.service
 systemctl enable tailscaled.service
 systemctl enable dconf-update.service
 systemctl enable rpm-ostreed-automatic.timer
-systemctl enable usr-share-sddm-themes.mount
 
 #Add the Flathub Flatpak remote and remove the Fedora Flatpak remote
 flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
