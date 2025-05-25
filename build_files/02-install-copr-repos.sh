@@ -18,7 +18,10 @@ dnf5 -y copr enable kylegospo/obs-vkcapture
 # Enable nerd-fonts repo
 dnf5 -y copr enable che/nerd-fonts
 
-dnf5 -y copr enable danayer/mesa-git
-dnf5 -y update --refresh
+if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
+    dnf5 -y copr enable danayer/mesa-git
+    dnf5 -y update --refresh
+fi
+
 
 echo "::endgroup::"

@@ -28,7 +28,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
-    FEDORA_MAJOR_VERSION=${FEDORA_MAJOR_VERSION} /ctx/build_files/build.sh 
+    FEDORA_MAJOR_VERSION=${FEDORA_MAJOR_VERSION} BASE_IMAGE_TAG=${BASE_IMAGE_TAG} /ctx/build_files/build.sh 
     
 ### LINTING
 ## Verify final image and contents are correct.
