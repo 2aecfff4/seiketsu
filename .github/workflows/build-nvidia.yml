@@ -93,7 +93,7 @@ jobs:
           containerfiles: |
             ./Containerfile
           build-args: |
-            BASE_IMAGE_NAME=kinoite-nvidia
+            BASE_IMAGE_TAG=nvidia
           # Postfix image name with -custom to make it a little more descriptive
           # Syntax: https://docs.github.com/en/actions/learn-github-actions/expressions#format
           image: ${{ env.IMAGE_NAME }}
