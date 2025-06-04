@@ -120,7 +120,9 @@
                 "shadow-utils",
                 "perl-Image-ExifTool",
                 "acpica-tools",
-                "ksshaskpass"
+                "ksshaskpass",
+                "strace",
+                "iotop-c"
             ]
         },
         "exclude": {
