@@ -12,6 +12,8 @@ cp /ctx/packages.json /tmp/packages.json
 
 echo "::endgroup::"
 
+rsync -rvK /ctx/system_files/ /
+
 # Get COPR Repos
 /ctx/build_files/02-install-copr-repos.sh
 
