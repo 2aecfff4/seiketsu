@@ -6,7 +6,8 @@ ARG SOURCE_IMAGE="${BASE_IMAGE_NAME}-${BASE_IMAGE_TAG}"
 ARG BASE_IMAGE="ghcr.io/ublue-os/${SOURCE_IMAGE}"
 
 FROM scratch AS ctx
-COPY / /
+# COPY / /
+COPY system_files /
 
 ## aurora image section
 FROM ${BASE_IMAGE}:${FEDORA_MAJOR_VERSION} AS base
