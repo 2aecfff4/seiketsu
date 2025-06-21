@@ -24,6 +24,8 @@ FROM ${BASE_IMAGE}:${FEDORA_MAJOR_VERSION} AS base
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
+ARG BASE_IMAGE_TAG
+ARG FEDORA_MAJOR_VERSION
 
 ENV BASE_IMAGE_TAG=${BASE_IMAGE_TAG}
 ENV FEDORA_MAJOR_VERSION=${FEDORA_MAJOR_VERSION}
