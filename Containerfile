@@ -24,6 +24,10 @@ FROM ${BASE_IMAGE}:${FEDORA_MAJOR_VERSION} AS base
 ## make modifications desired in your image and install packages by modifying the build.sh script
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 
+
+ENV BASE_IMAGE_TAG=${BASE_IMAGE_TAG}
+ENV FEDORA_MAJOR_VERSION=${FEDORA_MAJOR_VERSION}
+
 RUN echo "FEDORA_MAJOR_VERSION: ${FEDORA_MAJOR_VERSION}"
 RUN echo "BASE_IMAGE_TAG: ${BASE_IMAGE_TAG}"
 
@@ -31,7 +35,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/cache \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
-    FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}" BASE_IMAGE_TAG="${BASE_IMAGE_TAG}" /ctx/build_files/build.sh 
+    /ctx/build_files/build.sh 
     
 ### LINTING
 ## Verify final image and contents are correct.
