@@ -32,4 +32,9 @@ else
     echo "No packages to remove."
 fi
 
+if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
+    dnf5 -y install intel-compute-runtime
+fi
+
+
 echo "::endgroup::"
