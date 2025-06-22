@@ -154,8 +154,7 @@
     "42": {
         "include": {
             "all": [
-                "google-noto-fonts-all",
-                "fw-fanctrl"
+                "google-noto-fonts-all"
             ]
         },
         "exclude": {
