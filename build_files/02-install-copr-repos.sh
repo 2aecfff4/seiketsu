@@ -22,8 +22,8 @@ if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
     echo "adding coprs for main image..."
     
     # dnf5 -y copr enable @kernel-vanilla/next
-    dnf5 -y copr enable danayer/mesa-git
-    dnf5 -y update --refresh
+    # dnf5 -y copr enable danayer/mesa-git
+    # dnf5 -y update --refresh
 fi
 
 
