@@ -34,6 +34,8 @@ fi
 
 if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
     dnf5 -y install intel-compute-runtime
+    dnf5 -y install igt-gpu-tools
+    dnf5 -y install libva-intel-media-driver
 fi
 
 
