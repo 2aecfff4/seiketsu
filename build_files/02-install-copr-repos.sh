@@ -20,7 +20,7 @@ dnf5 -y copr enable che/nerd-fonts
 
 if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
     echo "adding coprs for main image..."
-    dnf5 -y copr enable @kernel-vanilla/stable-rc
+    dnf5 -y copr enable @kernel-vanilla/next
     
     dnf5 -y update --refresh
     sudo dnf upgrade 'kernel*'
