@@ -26,7 +26,7 @@ if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
     # sudo dnf upgrade 'kernel*'
     dnf5 -y install kernel-*-6.14.3
     # dnf5 -y remove $(dnf rq --installonly --latest-limit=-1)
-    dnf -y remove --oldinstallonly
+    # dnf -y remove --oldinstallonly
     
     # dnf5 -y copr enable @kernel-vanilla/next
     # dnf5 -y copr enable danayer/mesa-git
