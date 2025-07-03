@@ -26,7 +26,7 @@ if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
     dnf config-manager addrepo --from-repofile=https://dl.fedoraproject.org/pub/alt/rawhide-kernel-nodebug/fedora-rawhide-kernel-nodebug.repo
     dnf install -y fedora-repos-rawhide
     dnf install -y --enablerepo=rawhide python3 
-    dnf upgrade 
+    dnf upgrade -y
     
     # dnf5 -y copr enable @kernel-vanilla/next
     
