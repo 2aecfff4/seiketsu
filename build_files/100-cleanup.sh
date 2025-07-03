@@ -49,7 +49,7 @@ if ! dnf remove "${old_kernels[@]}"; then
 fi
 
 # https://bugzilla.redhat.com/show_bug.cgi?id=2185410
-ls -lha /usr/lib/modules
-
+modules=$(ls -lha /usr/lib/modules)
+echo "$modules"
 
 echo "::endgroup::"
