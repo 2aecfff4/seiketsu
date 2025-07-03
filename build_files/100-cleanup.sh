@@ -36,6 +36,17 @@ if [ -f /etc/yum.repos.d/fedora-coreos-pool.repo ]; then
     sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/fedora-coreos-pool.repo
 fi
 
-dnf5 -y remove $(dnf rq --installonly --latest-limit=-1)
+
+old_kernels=($(dnf repoquery --installonly --latest-limit=-1 -q))
+if [ "${#old_kernels[@]}" -eq 0 ]; then
+    echo "No old kernels found"
+    exit 0
+fi
+
+if ! dnf remove "${old_kernels[@]}"; then
+    echo "Failed to remove old kernels"
+    exit 1
+fi
+
 
 echo "::endgroup::"
