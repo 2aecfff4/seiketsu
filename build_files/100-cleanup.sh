@@ -50,6 +50,6 @@ fi
 
 # https://bugzilla.redhat.com/show_bug.cgi?id=2185410
 modules=$(ls -lha /usr/lib/modules)
-echo "$modules"
+echo "modules: $modules"
 
 echo "::endgroup::"
