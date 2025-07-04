@@ -25,11 +25,11 @@ if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
     echo "adding coprs for main image..."
     # dnf5 -y install kernel-*-6.14.3    
 
-    dnf5 -y update --refresh
-    dnf config-manager addrepo --from-repofile=https://dl.fedoraproject.org/pub/alt/rawhide-kernel-nodebug/fedora-rawhide-kernel-nodebug.repo
-    dnf install -y fedora-repos-rawhide
-    dnf install -y --enablerepo=rawhide python3 
-    dnf upgrade -y
+    # dnf5 -y update --refresh
+    # dnf config-manager addrepo --from-repofile=https://dl.fedoraproject.org/pub/alt/rawhide-kernel-nodebug/fedora-rawhide-kernel-nodebug.repo
+    # dnf install -y fedora-repos-rawhide
+    # dnf install -y --enablerepo=rawhide python3 
+    # dnf upgrade -y
     
     # dnf5 -y copr enable @kernel-vanilla/next
     
