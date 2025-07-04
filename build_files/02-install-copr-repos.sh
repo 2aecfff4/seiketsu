@@ -18,6 +18,9 @@ dnf5 -y copr enable kylegospo/obs-vkcapture
 # Enable nerd-fonts repo
 dnf5 -y copr enable che/nerd-fonts
 
+dnf5 -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+
 if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
     echo "adding coprs for main image..."
     # dnf5 -y install kernel-*-6.14.3    
