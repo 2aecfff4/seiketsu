@@ -54,7 +54,6 @@
                 "sssd-krb5",
                 "sssd-nfs-idmap",
                 "tailscale",
-                "uld",
                 "usbmuxd",
                 "wireguard-tools",
                 "wl-clipboard",
