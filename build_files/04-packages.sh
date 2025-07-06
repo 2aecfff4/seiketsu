@@ -4,6 +4,9 @@ echo "::group:: ===$(basename "$0")==="
 
 set -ouex pipefail
 
+dnf5 -y install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+
 # build list of all packages requested for inclusion
 readarray -t INCLUDED_PACKAGES < <(jq -r "[(.all.include | (select(.all != null).all)[]), \
                     (select(.\"$FEDORA_MAJOR_VERSION\" != null).\"$FEDORA_MAJOR_VERSION\".include | (select(.all != null).all)[])] \
@@ -40,6 +43,8 @@ if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
     dnf5 -y swap libva-intel-media-driver intel-media-driver --allowerasing
     dnf5 -y install libva-intel-driver
 fi
+
+dnf5 -y swap ffmpeg-free ffmpeg --allowerasing
 
 
 echo "::endgroup::"
