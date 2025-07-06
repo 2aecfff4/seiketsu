@@ -13,7 +13,7 @@ flatpak remote-add --system --if-not-exists flathub https://flathub.org/repo/fla
 systemctl disable flatpak-add-fedora-repos.service
 
 # Disable all COPRs and RPM Fusion Repos and terra
-sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/negativo17-fedora-multimedia.repo
+# sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/negativo17-fedora-multimedia.repo
 # sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/tailscale.repo
 
 # Disable coprs
