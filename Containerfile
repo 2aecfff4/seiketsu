@@ -9,8 +9,7 @@ FROM scratch AS ctx
 COPY / /
 
 ## aurora image section
-# FROM ${BASE_IMAGE}:${FEDORA_MAJOR_VERSION} AS base
-FROM quay.io/fedora-ostree-desktops/kinoite:rawhide AS base
+FROM ${BASE_IMAGE}:${FEDORA_MAJOR_VERSION} AS base
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
