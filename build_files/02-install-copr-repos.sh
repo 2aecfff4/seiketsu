@@ -56,6 +56,7 @@ if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
                     kernel-tools-libs-devel-0:6.14.11-300.fc42.x86_64 \
                     kernel-uki-virt-0:6.14.11-300.fc42.x86_64 \
                     kernel-uki-virt-addons-0:6.14.11-300.fc42.x86_64
+    dracut -vf --kver=6.14.11-300.fc42.x86_64
 fi
 
 
