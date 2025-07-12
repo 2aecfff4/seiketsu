@@ -39,24 +39,24 @@ if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
     # dnf5 -y copr enable @kernel-vanilla/next
     # dnf5 -y copr enable danayer/mesa-git
 
-    rpm -qa | grep ^kernel | xargs -r dnf5 -y remove
-    dnf5 -y install dnf-plugin-versionlock 
-    dnf5 -y versionlock add kernel-6.14.11-300.fc42.x86_64 
-    # dnf5 repoquery kernel-\*-6.14.11-300.fc42.x86_64
-    dnf5 -y install kernel-core-0:6.14.11-300.fc42.x86_64 \
-                    kernel-devel-0:6.14.11-300.fc42.x86_64 \
-                    kernel-devel-matched-0:6.14.11-300.fc42.x86_64 \
-                    kernel-modules-0:6.14.11-300.fc42.x86_64 \
-                    kernel-modules-core-0:6.14.11-300.fc42.x86_64 \
-                    kernel-modules-extra-0:6.14.11-300.fc42.x86_64 \
-                    kernel-modules-internal-0:6.14.11-300.fc42.x86_64 \
-                    kernel-selftests-internal-0:6.14.11-300.fc42.x86_64 \
-                    kernel-tools-0:6.14.11-300.fc42.x86_64 \
-                    kernel-tools-libs-0:6.14.11-300.fc42.x86_64 \
-                    kernel-tools-libs-devel-0:6.14.11-300.fc42.x86_64 \
-                    kernel-uki-virt-0:6.14.11-300.fc42.x86_64 \
-                    kernel-uki-virt-addons-0:6.14.11-300.fc42.x86_64
-    dracut -vf --kver=6.14.11-300.fc42.x86_64
+    # rpm -qa | grep ^kernel | xargs -r dnf5 -y remove
+    # dnf5 -y install dnf-plugin-versionlock 
+    # dnf5 -y versionlock add kernel-6.14.11-300.fc42.x86_64 
+    # # dnf5 repoquery kernel-\*-6.14.11-300.fc42.x86_64
+    # dnf5 -y install kernel-core-0:6.14.11-300.fc42.x86_64 \
+    #                 kernel-devel-0:6.14.11-300.fc42.x86_64 \
+    #                 kernel-devel-matched-0:6.14.11-300.fc42.x86_64 \
+    #                 kernel-modules-0:6.14.11-300.fc42.x86_64 \
+    #                 kernel-modules-core-0:6.14.11-300.fc42.x86_64 \
+    #                 kernel-modules-extra-0:6.14.11-300.fc42.x86_64 \
+    #                 kernel-modules-internal-0:6.14.11-300.fc42.x86_64 \
+    #                 kernel-selftests-internal-0:6.14.11-300.fc42.x86_64 \
+    #                 kernel-tools-0:6.14.11-300.fc42.x86_64 \
+    #                 kernel-tools-libs-0:6.14.11-300.fc42.x86_64 \
+    #                 kernel-tools-libs-devel-0:6.14.11-300.fc42.x86_64 \
+    #                 kernel-uki-virt-0:6.14.11-300.fc42.x86_64 \
+    #                 kernel-uki-virt-addons-0:6.14.11-300.fc42.x86_64
+    # dracut -vf --kver=6.14.11-300.fc42.x86_64
 fi
 
 
