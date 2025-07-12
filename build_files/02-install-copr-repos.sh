@@ -43,7 +43,8 @@ if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
     dnf5 -y install dnf-plugin-versionlock 
     dnf5 -y versionlock add kernel-6.14.11-300.fc42.x86_64 
     dnf5 -y install kernel-6.14.11-300.fc42.x86_64 \
-                    kernel-*-6.14.11-300.fc42.x86_64 
+                    kernel-*-6.14.11-300.fc42.x86_64 \
+                    --exclude=*-debug
 fi
 
 
