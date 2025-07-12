@@ -39,6 +39,7 @@ if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
     # dnf5 -y copr enable @kernel-vanilla/next
     # dnf5 -y copr enable danayer/mesa-git
 
+    rpm -qa | grep ^kernel | xargs -r dnf5 -y remove
     dnf5 -y install dnf-plugin-versionlock 
     dnf5 -y versionlock add kernel-6.14.11-300.fc42.x86_64 
     dnf5 -y install kernel-6.14.11-300.fc42.x86_64 \
