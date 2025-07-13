@@ -150,7 +150,8 @@
                 "acpica-tools",
                 "ksshaskpass",
                 "strace",
-                "iotop-c"
+                "iotop-c",
+                "merkuro"
             ]
         },
         "exclude": {
