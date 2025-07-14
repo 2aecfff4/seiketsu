@@ -151,7 +151,9 @@
                 "ksshaskpass",
                 "strace",
                 "iotop-c",
-                "merkuro"
+                
+                "merkuro",
+                "qt6-qtlocation"
             ]
         },
         "exclude": {
