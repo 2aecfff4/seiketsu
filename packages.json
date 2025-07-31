@@ -80,6 +80,7 @@
                 "samba-winbind-clients",
                 "samba-winbind-modules",
                 "scx-scheds",
+                "scx-manager",
                 "setools-console",
                 "sssd-ad",
                 "sssd-ipa",
