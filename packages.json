@@ -154,7 +154,8 @@
                 "iotop-c",
                 
                 "merkuro",
-                "qt6-qtlocation"
+                "qt6-qtlocation",
+                "chmlib"
             ]
         },
         "exclude": {
