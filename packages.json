@@ -152,6 +152,7 @@
                 "ksshaskpass",
                 "strace",
                 "iotop-c",
+                "pipx",
                 
                 "merkuro",
                 "qt6-qtlocation",
