@@ -156,7 +156,8 @@
                 
                 "merkuro",
                 "qt6-qtlocation",
-                "chmlib"
+                "chmlib",
+                "iftop"
             ]
         },
         "exclude": {
