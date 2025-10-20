@@ -113,6 +113,7 @@
                 "cmake-data",
                 "clang",
                 "clang-tools-extra",
+                "lldb",
                 "jq",
                 "mold",
                 "nerd-fonts",
