@@ -1,7 +1,7 @@
 # Allow build scripts to be referenced without being copied into the final image
 ARG BASE_IMAGE_NAME="kinoite"
 ARG BASE_IMAGE_TAG="main"
-ARG FEDORA_MAJOR_VERSION="42"
+ARG FEDORA_MAJOR_VERSION="43"
 ARG SOURCE_IMAGE="${BASE_IMAGE_NAME}-${BASE_IMAGE_TAG}"
 ARG BASE_IMAGE="ghcr.io/ublue-os/${SOURCE_IMAGE}"
 
