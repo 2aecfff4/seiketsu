@@ -158,7 +158,8 @@
                 "merkuro",
                 "qt6-qtlocation",
                 "chmlib",
-                "iftop"
+                "iftop",
+                "ansible"
             ]
         },
         "exclude": {
