@@ -161,6 +161,8 @@
                 "iftop",
                 "ansible",
                 "stow",
+                
+                "google-noto-fonts-all"
             ]
         },
         "exclude": {
