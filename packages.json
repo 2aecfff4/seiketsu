@@ -159,7 +159,8 @@
                 "qt6-qtlocation",
                 "chmlib",
                 "iftop",
-                "ansible"
+                "ansible",
+                "stow",
             ]
         },
         "exclude": {
