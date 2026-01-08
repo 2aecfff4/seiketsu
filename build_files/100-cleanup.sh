@@ -45,4 +45,7 @@ fi
 modules=$(ls -lha /usr/lib/modules)
 echo "modules: $modules"
 
+
+chmod +x /usr/lib/systemd/system-sleep/battery-energy
+
 echo "::endgroup::"
