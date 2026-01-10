@@ -31,9 +31,7 @@
                 "xhost",
                 "xorg-x11-xauth",
                 "yubikey-manager",
-                "zstd",
-                "ptrace",
-                
+                "zstd",                
                 
                 "adcli",
                 "bash-color-prompt",
