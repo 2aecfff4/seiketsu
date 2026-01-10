@@ -33,6 +33,7 @@
                 "yubikey-manager",
                 "zstd",
                 "bpftool",
+                "perf",
                 
                 "adcli",
                 "bash-color-prompt",
