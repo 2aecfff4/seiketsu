@@ -32,6 +32,7 @@
                 "xorg-x11-xauth",
                 "yubikey-manager",
                 "zstd",
+                "ptrace",
                 
                 
                 "adcli",
@@ -42,7 +43,6 @@
                 "evtest",
                 "fastfetch",
                 "firewall-config",
-                "fish",
                 "foo2zjs",
                 "fuse-encfs",
                 "gcc",
