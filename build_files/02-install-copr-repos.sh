@@ -4,6 +4,10 @@ echo "::group:: ===$(basename "$0")==="
 
 set -eoux pipefail
 
+echo "::group:: ===List of preinstalled packages==="
+rpm -qa
+echo "::endgroup::"
+
 # Enable repo for scx-scheds
 dnf5 -y copr enable bieszczaders/kernel-cachyos-addons
 
