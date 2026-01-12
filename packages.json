@@ -175,7 +175,8 @@
                 "kcharselect",
                 "krfb",
                 "krfb-libs",
-                "podman-docker"
+                "podman-docker",
+                "python-music21"
             ]
         }
     },
