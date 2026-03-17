@@ -162,7 +162,10 @@
                 "ansible",
                 "stow",
                 
-                "google-noto-fonts-all"
+                "google-noto-fonts-all",
+
+                "mecab",
+                "mecab-ipadic"
             ]
         },
         "exclude": {
