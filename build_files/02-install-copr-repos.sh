@@ -18,7 +18,7 @@ dnf5 -y copr enable zeno/scrcpy
 dnf5 -y copr enable kylegospo/obs-vkcapture
 
 # Enable nerd-fonts repo
-dnf5 -y copr enable che/nerd-fonts fedora-42-x86_64
+dnf5 -y copr enable che/nerd-fonts
 
 
 if [[ "${BASE_IMAGE_TAG}" =~ main ]]; then
