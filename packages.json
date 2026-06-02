@@ -165,7 +165,9 @@
                 "google-noto-fonts-all",
 
                 "mecab",
-                "mecab-ipadic"
+                "mecab-ipadic",
+
+                "tesseract-langpack-jpn"
             ]
         },
         "exclude": {
